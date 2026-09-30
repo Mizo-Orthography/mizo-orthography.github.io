@@ -25,7 +25,7 @@ Here's one word, spelled both ways:
 | | Spelling |
 | :--- | :---: |
 | **Today's spelling** | <span class="old-spelling">duhâm</span> |
-| **Orthography 2.0** | <span class="new-spelling">dùħām</span> |
+| **Orthography 2.0** | <span class="new-spelling">dùħäm</span> |
 
 The consonant that used to just be `h` is now written `ħ` to make the glottal stop explicit, and the vowels carry their tone/length marks instead of leaving them to guesswork. {% include audio.html dir="diacritics" file="barred_h.mp3" label="ħ example" %}
 
