@@ -1,0 +1,69 @@
+# Base letters and digraphs used in Mizo Orthography 2.0.
+# `file` is the expected filename (mp3) under assets/audio/alphabets/.
+# Add a matching recording and the audio player appears automatically —
+# no need to edit index.md. See assets/README.md for the recording guide.
+letters:
+  - symbol: a
+    file: a.mp3
+  - symbol: b
+    file: b.mp3
+  - symbol: c
+    file: c.mp3
+  - symbol: d
+    file: d.mp3
+  - symbol: e
+    file: e.mp3
+  - symbol: f
+    file: f.mp3
+  - symbol: g
+    file: g.mp3
+  - symbol: h
+    file: h.mp3
+  - symbol: i
+    file: i.mp3
+  - symbol: j
+    file: j.mp3
+  - symbol: k
+    file: k.mp3
+  - symbol: l
+    file: l.mp3
+  - symbol: m
+    file: m.mp3
+  - symbol: n
+    file: n.mp3
+  - symbol: o
+    file: o.mp3
+  - symbol: p
+    file: p.mp3
+  - symbol: r
+    file: r.mp3
+  - symbol: s
+    file: s.mp3
+  - symbol: t
+    file: t.mp3
+  - symbol: ṭ
+    file: t_dot.mp3
+  - symbol: u
+    file: u.mp3
+  - symbol: v
+    file: v.mp3
+  - symbol: z
+    file: z.mp3
+
+digraphs:
+  - symbol: ch
+    file: ch.mp3
+  - symbol: hl
+    file: hl.mp3
+  - symbol: hm
+    file: hm.mp3
+  - symbol: hn
+    file: hn.mp3
+  - symbol: hng
+    file: hng.mp3
+  - symbol: hr
+    file: hr.mp3
+  - symbol: ng
+    file: ng.mp3
+  - symbol: tl
+    file: tl.mp3

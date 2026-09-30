@@ -1,0 +1,17 @@
+title: Mizo Orthography 2.0
+description: >-
+  A public, community-driven proposal to add clear tone and vowel-length
+  marking to written Mizo — see the difference from today's spelling,
+  hear the sounds, and join the discussion.
+lang: en
+
+theme: jekyll-theme-cayman
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - README.md
+  - LICENSE

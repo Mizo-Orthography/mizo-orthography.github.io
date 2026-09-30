@@ -1,78 +1,123 @@
-# Mizo Orthography 2.0: Vowel & Tone System
+---
+layout: default
+---
 
-This repository hosts the public proposal for **Mizo Orthography 2.0**, a standardized writing system designed for Mizo vowels and consonants. By incorporating specific diacritics to explicitly represent tone and length, this proposal aims to distinguish between short level, short low, long level, and long low tones using a clean, modern approach based on existing linguistic conventions[cite: 1].
+Mizo is normally written today without marking **tone** (pitch) or **vowel length** — so the same spelling can stand for words that sound quite different when spoken. **Mizo Orthography 2.0** is a community proposal that adds a small set of accent marks to make tone and length visible on the page, while keeping every letter you already know.
 
-The goal of this system is to modernize Mizo writing conventions to be more precise for academic, religious, digital, and computational contexts—improving accuracy for text-to-speech systems, automatic transcription, and digital content creation[cite: 1].
+This page shows the two systems side by side, lets you hear each new mark, and links to where you can weigh in.
+
+<div class="callout" markdown="1">
+**Nothing about the alphabet is being replaced.** Orthography 2.0 only *adds* marks on top of today's letters — if you can read Mizo now, you can already read most of a 2.0 text; the marks just remove the guesswork.
+</div>
 
 ---
 
-## 1. Alphabets, Digraphs & Glottal Stop
+## What's Actually Changing?
 
-* **Alphabets:** `a` `b` `c` `d` `e` `f` `g` `h` `i` `j` `k` `l` `m` `n` `o` `p` `r` `s` `t` `ṭ` `u` `v` `z`[cite: 1]
-* **Digraphs:** `ch` `hl` `hm` `hn` `hng` `hr` `ng` `tl`[cite: 1]
-* **Glottal Stop:** Explicitly represented using the h-bar symbol (`ħ`)[cite: 1].
-  * *Example:* `dùħām` (corresponding to *duhâm* in traditional Mizo orthography)[cite: 1].
+* **Today:** tone and vowel length are usually left unmarked, so a reader has to already know a word to say it with the right pitch and rhythm.
+* **Orthography 2.0:** each vowel gets one of four small marks (or none) to show its exact tone and length, and a few consonants get a matching mark for tone.
+* **Why bother:** clearer reading for learners, more consistent hymn/scripture and dictionary spelling, and better accuracy for text-to-speech, transcription, and other digital tools.
+
+## See the Difference
+
+Here's one word, spelled both ways:
+
+| | Spelling |
+| :--- | :---: |
+| **Today's spelling** | <span class="old-spelling">duhâm</span> |
+| **Orthography 2.0** | <span class="new-spelling">dùħām</span> |
+
+The consonant that used to just be `h` is now written `ħ` to make the glottal stop explicit, and the vowels carry their tone/length marks instead of leaving them to guesswork. {% include audio.html dir="diacritics" file="barred_h.mp3" label="ħ example" %}
+
+Have a clearer or more everyday example word? Suggest it in [Discussions](https://github.com/Mizo-Orthography/mizo-orthography.github.io/discussions).
 
 ---
 
-## 2. Vowel Matrix
+## The Alphabet
 
-The table below defines the diacritics assigned to each vowel across four primary tone and length combinations[cite: 1].
+Every letter below is unchanged from today's Mizo alphabet. Press play to hear each one — clips are added by volunteers, so some are still marked "not recorded yet."
 
-| Vowel | Short Level (Bare) | Short Low (Grave) | Long Level (Macron) | Long Low (Diaeresis) |
+| Letter | Listen |
+| :---: | :---: |
+{%- for item in site.data.alphabet.letters %}
+| **{{ item.symbol }}** | {% include audio.html dir="alphabets" file=item.file label=item.symbol %} |
+{%- endfor %}
+
+**Digraphs** (two letters, one sound) work exactly as they do today:
+
+| Digraph | Listen |
+| :---: | :---: |
+{%- for item in site.data.alphabet.digraphs %}
+| **{{ item.symbol }}** | {% include audio.html dir="alphabets" file=item.file label=item.symbol %} |
+{%- endfor %}
+
+---
+
+## Tone & Length: The New Marks
+
+The table below shows the same five vowels the way they're written **today** (one plain spelling, tone left to context) next to the **four** specific forms Orthography 2.0 gives them.
+
+| Vowel | Today (ambiguous) | Short, low tone | Long, level tone | Long, low tone |
 | :---: | :---: | :---: | :---: | :---: |
-| **A** | a | à | ā | ä |
-| **E** | e | è | ē | ë |
-| **I** | i | ì | ī | ï |
-| **O** | o | ò | ō | ö |
-| **U** | u | ù | ū | ü |
+| **A** | <span class="old-spelling">a</span> | à | ā | ä |
+| **E** | <span class="old-spelling">e</span> | è | ē | ë |
+| **I** | <span class="old-spelling">i</span> | ì | ī | ï |
+| **O** | <span class="old-spelling">o</span> | ò | ō | ö |
+| **U** | <span class="old-spelling">u</span> | ù | ū | ü |
 
-### Vowel Tone & Length Descriptions
+In other words: whenever today's spelling would look identical for four different-sounding words, 2.0 gives each one its own mark. Here's what each mark sounds like and where it's used:
 
-1. **Short Level Tone (Bare):** Baseline form; uses the plain vowel without diacritics[cite: 1].
-   * *Examples:* `Lal`, `Pàthian`[cite: 1]
-2. **Short Low Tone (Grave ` ` `):** Indicates a lower pitch or falling tone[cite: 1].
-   * *Examples:* `kàn`, `pùipaà`[cite: 1]
-3. **Long Level Tone (Macron ` ¯ `):** Indicates a sustained, level vowel sound without a pitch shift[cite: 1].
-   * *Examples:* `ngāithlä`, `hmā`[cite: 1]
-4. **Long Low Tone (Diaeresis ` ¨ `):** Indicates a sustained vowel sound carrying a low pitch[cite: 1].
-   * *Examples:* `künin`, `dïl`[cite: 1]
+| Mark | Looks like | Used on | Meaning | Example | Listen |
+| :--- | :---: | :--- | :--- | :---: | :---: |
+{%- for item in site.data.diacritics %}
+| {{ item.name }} | {{ item.mark }} | {{ item.used_on }} | {{ item.meaning }} | {{ item.example }} | {% include audio.html dir="diacritics" file=item.file label=item.name %} |
+{%- endfor %}
 
 ---
 
-## 3. Consonant Matrix
+## Consonants That Carry Tone
 
-Certain consonants carry tone markers to indicate pitch variations across words[cite: 1]:
+A few consonants can also carry a low-tone mark:
 
-| Consonant | Level Tone (Bare) | Low Tone |
+| Consonant | Today (level tone / ambiguous) | Low tone |
 | :---: | :---: | :---: |
-| **L** | l | l̀ |
-| **M** | m | ṃ / m̀ |
-| **N** | n | ň |
-| **R** | r | ř |
+| **L** | <span class="old-spelling">l</span> | l̀ |
+| **M** | <span class="old-spelling">m</span> | ṃ / m̀ |
+| **N** | <span class="old-spelling">n</span> | ň |
+| **R** | <span class="old-spelling">r</span> | ř |
 
-> **Rendering Note:** For consonants with limited font rendering support across digital platforms (such as `m̀`), a dot below (`ṃ`) is recommended as an alternative for better compatibility[cite: 1].
+> **Rendering note:** on platforms where `m̀` doesn't display cleanly, the dot-below form `ṃ` is the recommended, more compatible alternative.
 
 ---
 
-## 4. Summary of Features
+<details markdown="1">
+<summary>Full technical summary (for linguists &amp; developers)</summary>
 
 | Feature | Diacritic | Notes |
 | :--- | :--- | :--- |
-| **Short Tone** | None / Grave (` ` `) | Bare for short level, grave accent for short low[cite: 1]. |
-| **Long Tone** | Macron (` ¯ `) / Diaeresis (` ¨ `) | Macron for long level, diaeresis for long low[cite: 1]. |
-| **Glottal Stop** | `ħ` | Replaces implicit or context-dependent glottal stops[cite: 1]. |
+| **Short tone** | None / Grave (`◌̀`) | Bare for short level, grave accent for short low. |
+| **Long tone** | Macron (`◌̄`) / Diaeresis (`◌̈`) | Macron for long level, diaeresis for long low. |
+| **Glottal stop** | `ħ` | Replaces implicit or context-dependent glottal stops. |
+
+**Alphabet:** `a` `b` `c` `d` `e` `f` `g` `h` `i` `j` `k` `l` `m` `n` `o` `p` `r` `s` `t` `ṭ` `u` `v` `z`
+**Digraphs:** `ch` `hl` `hm` `hn` `hng` `hr` `ng` `tl`
+
+All source data for the tables on this page (letters, digraphs, and diacritics) lives in [`_data/alphabet.yml`](https://github.com/Mizo-Orthography/mizo-orthography.github.io/blob/main/_data/alphabet.yml) and [`_data/diacritics.yml`](https://github.com/Mizo-Orthography/mizo-orthography.github.io/blob/main/_data/diacritics.yml) — propose a change there and it updates every table on the page.
+
+</details>
 
 ---
 
 ## 💬 Community Feedback & Discussion
 
-We welcome input from linguists, educators, developers, and native speakers!
+We welcome input from linguists, educators, developers, and native speakers — this proposal isn't final, and it won't get better without your eyes on it.
 
-To participate in the discussion:
-1. Go to the **Discussions** tab in this repository.
-2. Select or create a thread related to specific diacritics, rendering compatibility, or phonetics.
-3. Share your suggestions, objections, or questions.
+To participate:
+1. Go to the [**Discussions**](https://github.com/Mizo-Orthography/mizo-orthography.github.io/discussions) tab in this repository.
+2. Select or start a thread about a specific mark, an example word, rendering compatibility, or anything else.
+3. Share your suggestions, objections, or questions — or just leave a comment below.
+
+Want to help with audio? See [`assets/README.md`](https://github.com/Mizo-Orthography/mizo-orthography.github.io/blob/main/assets/README.md) for how to record and add a pronunciation clip.
 
 <script src="https://giscus.app/client.js"
         data-repo="Mizo-Orthography/mizo-orthography.github.io"
@@ -84,7 +129,7 @@ To participate in the discussion:
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="bottom"
-        data-theme="dark_high_contrast"
+        data-theme="preferred_color_scheme"
         data-lang="en"
         crossorigin="anonymous"
         async>

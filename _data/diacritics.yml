@@ -1,0 +1,45 @@
+# The marks introduced (or newly systematized) by Mizo Orthography 2.0.
+# `file` is the expected filename (mp3) under assets/audio/diacritics/ —
+# a short clip demonstrating the mark on an example word.
+- id: grave
+  mark: "◌̀"
+  name: Grave accent
+  used_on: vowels, l, m
+  meaning: Short, low-pitched tone
+  example: à
+  file: grave.mp3
+- id: macron
+  mark: "◌̄"
+  name: Macron
+  used_on: vowels
+  meaning: Long, level-pitched tone
+  example: ā
+  file: macron.mp3
+- id: diaeresis
+  mark: "◌̈"
+  name: Diaeresis
+  used_on: vowels
+  meaning: Long, low-pitched tone
+  example: ä
+  file: diaeresis.mp3
+- id: caron
+  mark: "◌̌"
+  name: Caron
+  used_on: n, r
+  meaning: Low tone on a consonant
+  example: ň
+  file: caron.mp3
+- id: dot-below
+  mark: "◌̣"
+  name: Dot below
+  used_on: m (rendering-safe alternative to grave)
+  meaning: Low tone on m, in fonts/systems where m̀ doesn't display well
+  example: ṃ
+  file: dot_below.mp3
+- id: barred-h
+  mark: "ħ"
+  name: Barred H
+  used_on: glottal stop
+  meaning: Makes an implicit or context-dependent glottal stop explicit
+  example: ħ
+  file: barred_h.mp3

@@ -1,0 +1,14 @@
+{%- comment -%}
+  Renders a play button for assets/audio/<dir>/<file> if that file has been
+  added to the repo, or a quiet "not recorded yet" marker otherwise. This
+  means contributors can drop in a correctly-named clip and the site will
+  pick it up automatically, without anyone editing index.md.
+  Usage: {% include audio.html dir="alphabets" file=item.file label=item.symbol %}
+{%- endcomment -%}
+{%- assign clip_path = "/assets/audio/" | append: include.dir | append: "/" | append: include.file -%}
+{%- assign clip = site.static_files | where: "path", clip_path | first -%}
+{%- if clip -%}
+<audio controls preload="none" style="height:1.75em;vertical-align:middle;"><source src="{{ clip_path | relative_url }}" type="audio/mpeg"></audio>
+{%- else -%}
+<span class="audio-missing" title="Not recorded yet &mdash; see assets/README.md to contribute a clip for &quot;{{ include.label }}&quot;">&#128263;</span>
+{%- endif -%}
