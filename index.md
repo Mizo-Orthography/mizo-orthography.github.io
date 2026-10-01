@@ -12,13 +12,13 @@ This page shows the two systems, lets you hear each new mark, and links to where
 
 ---
 
-## What's Actually Changing?
+## What's Actually Changing? {#changes}
 
 * **Today:** tone and vowel length are usually left either unmarked, or the circumflex '^' is used for any long vowel regardless of the tone, so a reader has to already know a word to say it with the right pitch and rhythm.
 * **Orthography 2.0:** each vowel gets one of three small marks (or none) to show its exact tone and length, and a few consonants get a matching mark for tone.
 * **Why bother:** clearer reading for learners, more consistent hymn/scripture and dictionary spelling, and better accuracy for text-to-speech, transcription, and other digital tools.
 
-## See the Difference
+## See the Difference {#difference}
 
 Here's one word, spelled both ways:
 
@@ -41,7 +41,7 @@ Have a clearer or more everyday example word? Suggest it in [Discussions](https:
 
 <div class="tab-panel" role="tabpanel" id="panel-new" aria-labelledby="tab-new" markdown="1">
 
-## The Alphabet
+## The Alphabet {#new-alphabet}
 
 The proposed base alphabet has **{{ site.data.alphabet.letters | size }} letters, none of them digraphs.** Digraphs and trigraphs are still part of the system, but they are built from these base letters rather than counted as letters of their own.
 
@@ -56,19 +56,19 @@ Press play to hear each one; clips are added by volunteers, so some are still ma
 
 {% include sound-grid.html items=site.data.alphabet.letters %}
 
-## Digraphs
+## Digraphs {#new-digraphs}
 
 Two base letters that together make one sound:
 
 {% include sound-grid.html items=site.data.alphabet.digraphs %}
 
-## Trigraphs
+## Trigraphs {#new-trigraphs}
 
 Three base letters that together make one sound:
 
 {% include sound-grid.html items=site.data.alphabet.trigraphs %}
 
-## Tone & Length: The New Marks
+## Tone & Length: The New Marks {#new-marks}
 
 The table below shows the same five vowels the way they're written **today** (one plain spelling, tone left to context) next to the **four** specific forms Orthography 2.0 gives them.
 
@@ -90,7 +90,7 @@ In other words: whenever today's spelling would look identical for four differen
 
 ---
 
-## Consonants That Carry Tone
+## Consonants That Carry Tone {#new-consonants}
 
 A few consonants can also carry a low-tone mark:
 
@@ -107,13 +107,13 @@ A few consonants can also carry a low-tone mark:
 
 <div class="tab-panel" role="tabpanel" id="panel-legacy" aria-labelledby="tab-legacy" markdown="1">
 
-## The Alphabet
+## The Alphabet {#legacy-alphabet}
 
 The legacy Mizo alphabet has **{{ site.data.alphabet.legacy | size }} letters**, three of which — **aw**, **ch** and **ng** — are digraphs (two characters, one letter).
 
 {% include sound-grid.html items=site.data.alphabet.legacy %}
 
-## Tone & Length
+## Tone & Length {#legacy-tone}
 
 Legacy spelling does not mark **tone** or **vowel length**, so one written form (for example <span class="old-spelling">a</span>, <span class="old-spelling">e</span>, <span class="old-spelling">i</span>, <span class="old-spelling">o</span>, <span class="old-spelling">u</span>, or <span class="old-spelling">duhâm</span>) can stand for several differently-sounding words. Readers rely on context and prior knowledge of the word.
 
@@ -149,7 +149,26 @@ Legacy spelling does not mark **tone** or **vowel length**, so one written form 
     });
   });
   root.classList.add('js');
-  select(location.hash === '#legacy' ? 1 : 0, false, false);
+
+  // Make every section heading linkable; links to sections inside a hidden tab open that tab first.
+  [].slice.call(document.querySelectorAll('h2[id]')).forEach(function (h) {
+    var a = document.createElement('a');
+    a.className = 'anchor';
+    a.href = '#' + h.id;
+    a.setAttribute('aria-label', 'Link to this section');
+    a.textContent = '#';
+    h.appendChild(a);
+  });
+  function fromHash(scroll) {
+    var id = decodeURIComponent(location.hash.slice(1));
+    var target = id && document.getElementById(id);
+    var i = id === 'legacy' ? 1 : 0;
+    panels.forEach(function (p, j) { if (target && p.contains(target)) i = j; });
+    select(i, false, false);
+    if (scroll && target && target !== root) target.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function () { fromHash(true); });
+  fromHash(true);
 })();
 </script>
 

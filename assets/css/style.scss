@@ -112,3 +112,15 @@ details[open] summary {
   width: 100%;
   max-width: 150px;
 }
+
+h2 .anchor {
+  margin-left: 0.4em;
+  font-size: 0.7em;
+  text-decoration: none;
+  opacity: 0;
+}
+
+h2:hover .anchor,
+h2 .anchor:focus {
+  opacity: 0.6;
+}
