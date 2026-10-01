@@ -66,6 +66,8 @@ digraphs:
     file: ng.mp3
   - symbol: tl
     file: tl.mp3
+  - symbol: ou
+    file: ou.mp3
 
 trigraphs:
   - symbol: hng

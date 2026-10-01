@@ -43,7 +43,15 @@ Have a clearer or more everyday example word? Suggest it in [Discussions](https:
 
 ## The Alphabet
 
-The proposed base alphabet has **{{ site.data.alphabet.letters | size }} letters, none of them digraphs.** Digraphs and trigraphs are still part of the system, but they are built from these base letters rather than counted as letters of their own (for example, `c` now stands where legacy spelling used `ch`). Press play to hear each one; clips are added by volunteers, so some are still marked "not recorded yet."
+The proposed base alphabet has **{{ site.data.alphabet.letters | size }} letters, none of them digraphs.** Digraphs and trigraphs are still part of the system, but they are built from these base letters rather than counted as letters of their own (for example, `c` now stands where legacy spelling used `ch`).
+
+**Spelling changes from legacy:** a few letters change places. They are the only letters whose spelling shifts; everything else carries over.
+
+| Legacy | Mizo 2.0 |
+| :---: | :---: |
+| <span class="old-spelling">ch</span> | **c** |
+| <span class="old-spelling">aw</span> | **o** |
+| <span class="old-spelling">o</span> | **ou** | Press play to hear each one; clips are added by volunteers, so some are still marked "not recorded yet."
 
 | Letter | Listen |
 | :---: | :---: |
@@ -172,7 +180,7 @@ Legacy spelling does not mark **tone** or **vowel length**, so one written form 
 | **Glottal stop** | `ħ` | Replaces implicit or context-dependent glottal stops. |
 
 **2.0 base alphabet (no digraphs):** `a` `b` `c` `d` `e` `f` `g` `h` `i` `j` `k` `l` `m` `n` `o` `p` `r` `s` `t` `ṭ` `u` `v` `z`
-**2.0 digraphs:** `hl` `hm` `hn` `hr` `ng` `tl`
+**2.0 digraphs:** `hl` `hm` `hn` `hr` `ng` `ou` `tl`
 **2.0 trigraphs:** `hng` `thl`
 **Legacy alphabet (digraphs *aw*, *ch*, *ng*):** `a` `aw` `b` `ch` `d` `e` `f` `g` `ng` `h` `i` `j` `k` `l` `m` `n` `o` `p` `r` `s` `t` `ṭ` `u` `v` `z`
 
