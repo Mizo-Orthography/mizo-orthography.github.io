@@ -88,7 +88,7 @@ The table below shows the same five vowels the way they're written **today** (on
 | **A** | <span class="old-spelling">a</span> | à | ā | ä |
 | **E** | <span class="old-spelling">e</span> | è | ē | ë |
 | **I** | <span class="old-spelling">i</span> | ì | ī | ï |
-| **O** | <span class="old-spelling">o</span> | ò | ō | ö |
+| **O** | <span class="old-spelling">aw</span> | ò | ō | ö |
 | **U** | <span class="old-spelling">u</span> | ù | ū | ü |
 
 In other words: whenever today's spelling would look identical for four different-sounding words, 2.0 gives each one its own mark. Here's what each mark sounds like and where it's used:
