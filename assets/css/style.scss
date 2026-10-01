@@ -48,3 +48,39 @@ details[open] summary {
   margin: 1.5em 0;
   border-radius: 4px;
 }
+
+.tab-list {
+  display: flex;
+  gap: 0.25em;
+  border-bottom: 2px solid rgba(27, 31, 35, 0.15);
+  margin-top: 1.5em;
+}
+
+.tab-list button {
+  font: inherit;
+  font-weight: 600;
+  padding: 0.6em 1.1em;
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.tab-list button[aria-selected="true"] {
+  opacity: 1;
+  border-color: rgba(27, 31, 35, 0.15);
+  background: #fff;
+  margin-bottom: -2px;
+  border-bottom: 2px solid #fff;
+}
+
+.tabs:not(.js) .tab-list {
+  display: none;
+}
+
+.tab-panel[hidden] {
+  display: none;
+}
