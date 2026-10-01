@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Mizo is normally written today without marking **tone** (pitch) or **vowel length** — so the same spelling can stand for words that sound quite different when spoken. **Mizo Orthography 2.0** is a community proposal that adds a small set of accent marks to make tone and length visible on the page, while keeping every letter you already know.
+Mizo is normally written today without consistent marking of **tone** (pitch) or **vowel length** — so the same spelling can stand for words that sound quite different when spoken. **Mizo Orthography 2.0** is a community proposal that adds a small set of accent marks to make tone and length visible on the page, while keeping most of the letters you already know.
 
 This page shows the two systems, lets you hear each new mark, and links to where you can weigh in.
 
@@ -16,7 +16,7 @@ This page shows the two systems, lets you hear each new mark, and links to where
 
 * **Today:** tone and vowel length are usually left either unmarked, or the circumflex '^' is used for any long vowel regardless of the tone, so a reader has to already know a word to say it with the right pitch and rhythm.
 * **Orthography 2.0:** each vowel gets one of three small marks (or none) to show its exact tone and length, and a few consonants get a matching mark for tone.
-* **Why bother:** clearer reading for learners, more consistent hymn/scripture and dictionary spelling, and better accuracy for text-to-speech, transcription, and other digital tools.
+* **Why bother:** clearer reading for learners, more consistent hymn/scripture and dictionary spelling, and better accuracy for text-to-speech, transcription, and other digital tools like screen readers.
 
 ## See the Difference {#difference}
 
