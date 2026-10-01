@@ -70,15 +70,15 @@ Three base letters that together make one sound:
 
 ## Tone & Length: The New Marks {#new-marks}
 
-The table below shows the five vowels and the four different tones for each one.
+The table below shows the five vowels and the four different tones for each one. Press play under each to hear it.
 
 | Vowel | Short, level tone | Short, low tone | Long, level tone | Long, low tone |
 | :---: | :---: | :---: | :---: | :---: |
-| **A** | <span class="old-spelling">a</span> | à | ā | ä |
-| **E** | <span class="old-spelling">e</span> | è | ē | ë |
-| **I** | <span class="old-spelling">i</span> | ì | ī | ï |
-| **O** | <span class="old-spelling">o</span> | ò | ō | ö |
-| **U** | <span class="old-spelling">u</span> | ù | ū | ü |
+| **A** | <span class="old-spelling">a</span> {% include audio.html dir="diacritics" file="tone-a-short-level.mp3" label="A short level" %} | à {% include audio.html dir="diacritics" file="tone-a-short-low.mp3" label="A short low" %} | ā {% include audio.html dir="diacritics" file="tone-a-long-level.mp3" label="A long level" %} | ä {% include audio.html dir="diacritics" file="tone-a-long-low.mp3" label="A long low" %} |
+| **E** | <span class="old-spelling">e</span> {% include audio.html dir="diacritics" file="tone-e-short-level.mp3" label="E short level" %} | è {% include audio.html dir="diacritics" file="tone-e-short-low.mp3" label="E short low" %} | ē {% include audio.html dir="diacritics" file="tone-e-long-level.mp3" label="E long level" %} | ë {% include audio.html dir="diacritics" file="tone-e-long-low.mp3" label="E long low" %} |
+| **I** | <span class="old-spelling">i</span> {% include audio.html dir="diacritics" file="tone-i-short-level.mp3" label="I short level" %} | ì {% include audio.html dir="diacritics" file="tone-i-short-low.mp3" label="I short low" %} | ī {% include audio.html dir="diacritics" file="tone-i-long-level.mp3" label="I long level" %} | ï {% include audio.html dir="diacritics" file="tone-i-long-low.mp3" label="I long low" %} |
+| **O** | <span class="old-spelling">o</span> {% include audio.html dir="diacritics" file="tone-o-short-level.mp3" label="O short level" %} | ò {% include audio.html dir="diacritics" file="tone-o-short-low.mp3" label="O short low" %} | ō {% include audio.html dir="diacritics" file="tone-o-long-level.mp3" label="O long level" %} | ö {% include audio.html dir="diacritics" file="tone-o-long-low.mp3" label="O long low" %} |
+| **U** | <span class="old-spelling">u</span> {% include audio.html dir="diacritics" file="tone-u-short-level.mp3" label="U short level" %} | ù {% include audio.html dir="diacritics" file="tone-u-short-low.mp3" label="U short low" %} | ū {% include audio.html dir="diacritics" file="tone-u-long-level.mp3" label="U long level" %} | ü {% include audio.html dir="diacritics" file="tone-u-long-low.mp3" label="U long low" %} |
 
 In other words: whenever today's spelling would look identical for four different-sounding words, 2.0 gives each one its own mark. Here's what each mark sounds like and where it's used:
 
