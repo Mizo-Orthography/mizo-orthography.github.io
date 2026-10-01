@@ -184,8 +184,8 @@ Legacy spelling does not mark **tone** or **vowel length**, so one written form 
 | **Glottal stop** | `ħ` | Replaces implicit or context-dependent glottal stops. |
 
 **2.0 base alphabet (no digraphs):** `a` `b` `c` `d` `e` `f` `g` `h` `i` `j` `k` `l` `m` `n` `o` `p` `r` `s` `t` `ṭ` `u` `v` `z`
-**2.0 digraphs:** `hl` `hm` `hn` `hr` `ng` `ou` `th` `tl` `ṭh`
-**2.0 trigraphs:** `hng` `thl`
+**2.0 digraphs:** `ch` `hl` `hm` `hn` `hr` `ng` `ou` `th` `tl` `ṭh`
+**2.0 trigraphs:** `chh` `hng` `thl`
 **Legacy alphabet (digraphs *aw*, *ch*, *ng*):** `a` `aw` `b` `ch` `d` `e` `f` `g` `ng` `h` `i` `j` `k` `l` `m` `n` `o` `p` `r` `s` `t` `ṭ` `u` `v` `z`
 
 All source data for the tables on this page (letters, digraphs, trigraphs, legacy letters, and diacritics) lives in [`_data/alphabet.yml`](https://github.com/Mizo-Orthography/mizo-orthography.github.io/blob/main/_data/alphabet.yml) and [`_data/diacritics.yml`](https://github.com/Mizo-Orthography/mizo-orthography.github.io/blob/main/_data/diacritics.yml) — propose a change there and it updates every table on the page.
