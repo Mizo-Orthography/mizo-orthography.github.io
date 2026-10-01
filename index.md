@@ -184,7 +184,7 @@ Legacy spelling does not mark **tone** or **vowel length**, so one written form 
 | **Glottal stop** | `ħ` | Replaces implicit or context-dependent glottal stops. |
 
 **2.0 base alphabet (no digraphs):** `a` `b` `c` `d` `e` `f` `g` `h` `i` `j` `k` `l` `m` `n` `o` `p` `r` `s` `t` `ṭ` `u` `v` `z`
-**2.0 digraphs:** `hl` `hm` `hn` `hr` `ng` `ou` `tl`
+**2.0 digraphs:** `hl` `hm` `hn` `hr` `ng` `ou` `th` `tl` `ṭh`
 **2.0 trigraphs:** `hng` `thl`
 **Legacy alphabet (digraphs *aw*, *ch*, *ng*):** `a` `aw` `b` `ch` `d` `e` `f` `g` `ng` `h` `i` `j` `k` `l` `m` `n` `o` `p` `r` `s` `t` `ṭ` `u` `v` `z`
 
