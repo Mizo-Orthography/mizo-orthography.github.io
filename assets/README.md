@@ -38,5 +38,8 @@ The full, current list of expected filenames lives in
    using the exact filename from the data file.
 3. Open a pull request. No other files need to change.
 
+Clips for the tone & length table live in `assets/audio/diacritics/` and are named
+`tone-<vowel>-<short|long>-<level|low>.mp3`, e.g. `tone-a-short-low.mp3` (20 clips: 5 vowels x 4 tones).
+
 If a letter or mark you want to record isn't listed yet, add it to the
 relevant `_data/*.yml` file in the same PR.
