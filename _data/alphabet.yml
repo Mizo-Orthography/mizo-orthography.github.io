@@ -64,6 +64,10 @@ digraphs:
     file: hr.mp3
   - symbol: ng
     file: ng.mp3
+  - symbol: th
+    file: th.mp3
+  - symbol: ṭh
+    file: t_dot_h.mp3
   - symbol: tl
     file: tl.mp3
   - symbol: ou
