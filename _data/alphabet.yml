@@ -1,4 +1,6 @@
-# Base letters and digraphs used in Mizo Orthography 2.0.
+# `letters`: the base alphabet of Mizo Orthography 2.0 (no digraphs).
+# `legacy`: the traditional (legacy) Mizo alphabet, which counts aw, ch and ng
+# as digraph letters.
 # `file` is the expected filename (mp3) under assets/audio/alphabets/.
 # Add a matching recording and the audio player appears automatically —
 # no need to edit index.md. See assets/README.md for the recording guide.
@@ -50,20 +52,79 @@ letters:
   - symbol: z
     file: z.mp3
 
-digraphs:
+legacy:
+  - symbol: a
+    file: a.mp3
+    digraph: false
+  - symbol: aw
+    file: aw.mp3
+    digraph: true
+  - symbol: b
+    file: b.mp3
+    digraph: false
   - symbol: ch
     file: ch.mp3
-  - symbol: hl
-    file: hl.mp3
-  - symbol: hm
-    file: hm.mp3
-  - symbol: hn
-    file: hn.mp3
-  - symbol: hng
-    file: hng.mp3
-  - symbol: hr
-    file: hr.mp3
+    digraph: true
+  - symbol: d
+    file: d.mp3
+    digraph: false
+  - symbol: e
+    file: e.mp3
+    digraph: false
+  - symbol: f
+    file: f.mp3
+    digraph: false
+  - symbol: g
+    file: g.mp3
+    digraph: false
   - symbol: ng
     file: ng.mp3
-  - symbol: tl
-    file: tl.mp3
+    digraph: true
+  - symbol: h
+    file: h.mp3
+    digraph: false
+  - symbol: i
+    file: i.mp3
+    digraph: false
+  - symbol: j
+    file: j.mp3
+    digraph: false
+  - symbol: k
+    file: k.mp3
+    digraph: false
+  - symbol: l
+    file: l.mp3
+    digraph: false
+  - symbol: m
+    file: m.mp3
+    digraph: false
+  - symbol: n
+    file: n.mp3
+    digraph: false
+  - symbol: o
+    file: o.mp3
+    digraph: false
+  - symbol: p
+    file: p.mp3
+    digraph: false
+  - symbol: r
+    file: r.mp3
+    digraph: false
+  - symbol: s
+    file: s.mp3
+    digraph: false
+  - symbol: t
+    file: t.mp3
+    digraph: false
+  - symbol: ṭ
+    file: t_dot.mp3
+    digraph: false
+  - symbol: u
+    file: u.mp3
+    digraph: false
+  - symbol: v
+    file: v.mp3
+    digraph: false
+  - symbol: z
+    file: z.mp3
+    digraph: false

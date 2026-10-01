@@ -4,10 +4,10 @@ layout: default
 
 Mizo is normally written today without marking **tone** (pitch) or **vowel length** — so the same spelling can stand for words that sound quite different when spoken. **Mizo Orthography 2.0** is a community proposal that adds a small set of accent marks to make tone and length visible on the page, while keeping every letter you already know.
 
-This page shows the two systems side by side, lets you hear each new mark, and links to where you can weigh in.
+This page shows the two systems, lets you hear each new mark, and links to where you can weigh in.
 
 <div class="callout" markdown="1">
-**Nothing about the alphabet is being replaced.** Orthography 2.0 only *adds* marks on top of today's letters — if you can read Mizo now, you can already read most of a 2.0 text; the marks just remove the guesswork.
+**Familiar letters, clearer marks.** Orthography 2.0 keeps the letters you already know and adds marks on top of them — if you can read Mizo now, you can already read most of a 2.0 text; the marks just remove the guesswork. Use the tabs below to compare the proposed alphabet with the legacy one.
 </div>
 
 ---
@@ -33,25 +33,23 @@ Have a clearer or more everyday example word? Suggest it in [Discussions](https:
 
 ---
 
+<div class="tabs" id="tabs">
+<div class="tab-list" role="tablist" aria-label="Orthography version">
+<button type="button" role="tab" id="tab-new" aria-controls="panel-new" aria-selected="true">Mizo 2.0 (proposed)</button>
+<button type="button" role="tab" id="tab-legacy" aria-controls="panel-legacy" aria-selected="false" tabindex="-1">Legacy Mizo</button>
+</div>
+
+<div class="tab-panel" role="tabpanel" id="panel-new" aria-labelledby="tab-new" markdown="1">
+
 ## The Alphabet
 
-Every letter below is unchanged from today's Mizo alphabet. Press play to hear each one — clips are added by volunteers, so some are still marked "not recorded yet."
+The proposed base alphabet has **{{ site.data.alphabet.letters | size }} letters and no digraphs** — every sound is built from single letters. Press play to hear each one; clips are added by volunteers, so some are still marked "not recorded yet."
 
 | Letter | Listen |
 | :---: | :---: |
 {%- for item in site.data.alphabet.letters %}
 | **{{ item.symbol }}** | {% include audio.html dir="alphabets" file=item.file label=item.symbol %} |
 {%- endfor %}
-
-**Digraphs** (two letters, one sound) work exactly as they do today:
-
-| Digraph | Listen |
-| :---: | :---: |
-{%- for item in site.data.alphabet.digraphs %}
-| **{{ item.symbol }}** | {% include audio.html dir="alphabets" file=item.file label=item.symbol %} |
-{%- endfor %}
-
----
 
 ## Tone & Length: The New Marks
 
@@ -88,6 +86,60 @@ A few consonants can also carry a low-tone mark:
 
 > **Rendering note:** on platforms where `m̀` doesn't display cleanly, the dot-below form `ṃ` is the recommended, more compatible alternative.
 
+</div>
+
+<div class="tab-panel" role="tabpanel" id="panel-legacy" aria-labelledby="tab-legacy" markdown="1">
+
+## The Alphabet
+
+The legacy Mizo alphabet has **{{ site.data.alphabet.legacy | size }} letters**, three of which — **aw**, **ch** and **ng** — are digraphs (two characters, one letter).
+
+| Letter | Type | Listen |
+| :---: | :---: | :---: |
+{%- for item in site.data.alphabet.legacy %}
+| **{{ item.symbol }}** | {% if item.digraph %}digraph{% else %}letter{% endif %} | {% include audio.html dir="alphabets" file=item.file label=item.symbol %} |
+{%- endfor %}
+
+## Tone & Length
+
+Legacy spelling does not mark **tone** or **vowel length**, so one written form (for example <span class="old-spelling">a</span>, <span class="old-spelling">e</span>, <span class="old-spelling">i</span>, <span class="old-spelling">o</span>, <span class="old-spelling">u</span>, or <span class="old-spelling">duhâm</span>) can stand for several differently-sounding words. Readers rely on context and prior knowledge of the word.
+
+</div>
+</div>
+
+<script>
+(function () {
+  var root = document.getElementById('tabs');
+  if (!root) return;
+  var tabs = [].slice.call(root.querySelectorAll('[role=tab]'));
+  var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
+  var hashes = { 'tab-new': 'mizo-2', 'tab-legacy': 'legacy' };
+  function select(i, focus, updateHash) {
+    tabs.forEach(function (t, j) {
+      t.setAttribute('aria-selected', j === i);
+      t.tabIndex = j === i ? 0 : -1;
+      panels[j].hidden = j !== i;
+    });
+    if (focus) tabs[i].focus();
+    if (updateHash && history.replaceState) history.replaceState(null, '', '#' + hashes[tabs[i].id]);
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { select(i, false, true); });
+    t.addEventListener('keydown', function (e) {
+      var k = e.key, n = tabs.length;
+      if (k === 'ArrowRight') select((i + 1) % n, true, true);
+      else if (k === 'ArrowLeft') select((i + n - 1) % n, true, true);
+      else if (k === 'Home') select(0, true, true);
+      else if (k === 'End') select(n - 1, true, true);
+      else return;
+      e.preventDefault();
+    });
+  });
+  root.classList.add('js');
+  select(location.hash === '#legacy' ? 1 : 0, false, false);
+})();
+</script>
+
 ---
 
 <details markdown="1">
@@ -99,10 +151,10 @@ A few consonants can also carry a low-tone mark:
 | **Long tone** | Macron (`◌̄`) / Diaeresis (`◌̈`) | Macron for long level, diaeresis for long low. |
 | **Glottal stop** | `ħ` | Replaces implicit or context-dependent glottal stops. |
 
-**Alphabet:** `a` `b` `c` `d` `e` `f` `g` `h` `i` `j` `k` `l` `m` `n` `o` `p` `r` `s` `t` `ṭ` `u` `v` `z`
-**Digraphs:** `ch` `hl` `hm` `hn` `hng` `hr` `ng` `tl`
+**2.0 alphabet (no digraphs):** `a` `b` `c` `d` `e` `f` `g` `h` `i` `j` `k` `l` `m` `n` `o` `p` `r` `s` `t` `ṭ` `u` `v` `z`
+**Legacy alphabet (digraphs *aw*, *ch*, *ng*):** `a` `aw` `b` `ch` `d` `e` `f` `g` `ng` `h` `i` `j` `k` `l` `m` `n` `o` `p` `r` `s` `t` `ṭ` `u` `v` `z`
 
-All source data for the tables on this page (letters, digraphs, and diacritics) lives in [`_data/alphabet.yml`](https://github.com/Mizo-Orthography/mizo-orthography.github.io/blob/main/_data/alphabet.yml) and [`_data/diacritics.yml`](https://github.com/Mizo-Orthography/mizo-orthography.github.io/blob/main/_data/diacritics.yml) — propose a change there and it updates every table on the page.
+All source data for the tables on this page (letters, legacy letters, and diacritics) lives in [`_data/alphabet.yml`](https://github.com/Mizo-Orthography/mizo-orthography.github.io/blob/main/_data/alphabet.yml) and [`_data/diacritics.yml`](https://github.com/Mizo-Orthography/mizo-orthography.github.io/blob/main/_data/diacritics.yml) — propose a change there and it updates every table on the page.
 
 </details>
 
