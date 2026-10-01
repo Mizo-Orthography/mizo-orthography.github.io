@@ -50,33 +50,23 @@ The proposed base alphabet has **{{ site.data.alphabet.letters | size }} letters
 | Legacy | Mizo 2.0 |
 | :---: | :---: |
 | <span class="old-spelling">aw</span> | **o** |
-| <span class="old-spelling">o</span> | **ou** | Press play to hear each one; clips are added by volunteers, so some are still marked "not recorded yet."
+| <span class="old-spelling">o</span> | **ou** |
 
-| Letter | Listen |
-| :---: | :---: |
-{%- for item in site.data.alphabet.letters %}
-| **{{ item.symbol }}** | {% include audio.html dir="alphabets" file=item.file label=item.symbol %} |
-{%- endfor %}
+Press play to hear each one; clips are added by volunteers, so some are still marked "not recorded yet."
+
+{% include sound-grid.html items=site.data.alphabet.letters %}
 
 ## Digraphs
 
 Two base letters that together make one sound:
 
-| Digraph | Listen |
-| :---: | :---: |
-{%- for item in site.data.alphabet.digraphs %}
-| **{{ item.symbol }}** | {% include audio.html dir="alphabets" file=item.file label=item.symbol %} |
-{%- endfor %}
+{% include sound-grid.html items=site.data.alphabet.digraphs %}
 
 ## Trigraphs
 
 Three base letters that together make one sound:
 
-| Trigraph | Listen |
-| :---: | :---: |
-{%- for item in site.data.alphabet.trigraphs %}
-| **{{ item.symbol }}** | {% include audio.html dir="alphabets" file=item.file label=item.symbol %} |
-{%- endfor %}
+{% include sound-grid.html items=site.data.alphabet.trigraphs %}
 
 ## Tone & Length: The New Marks
 
@@ -121,11 +111,7 @@ A few consonants can also carry a low-tone mark:
 
 The legacy Mizo alphabet has **{{ site.data.alphabet.legacy | size }} letters**, three of which — **aw**, **ch** and **ng** — are digraphs (two characters, one letter).
 
-| Letter | Type | Listen |
-| :---: | :---: | :---: |
-{%- for item in site.data.alphabet.legacy %}
-| **{{ item.symbol }}** | {% if item.digraph %}digraph{% else %}letter{% endif %} | {% include audio.html dir="alphabets" file=item.file label=item.symbol %} |
-{%- endfor %}
+{% include sound-grid.html items=site.data.alphabet.legacy %}
 
 ## Tone & Length
 

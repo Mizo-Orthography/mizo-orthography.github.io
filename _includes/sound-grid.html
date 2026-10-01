@@ -1,0 +1,10 @@
+{%- comment -%}
+  Renders a grid of cards: the symbol on top, its audio player below.
+  Usage: {% include sound-grid.html items=site.data.alphabet.letters %}
+  Items with `digraph: true` get a small "digraph" tag (used by the legacy list).
+{%- endcomment -%}
+<div class="sound-grid">
+{%- for item in include.items %}
+<div class="sound-card"><span class="sound-symbol">{{ item.symbol }}</span>{% include audio.html dir="alphabets" file=item.file label=item.symbol %}</div>
+{%- endfor %}
+</div>
