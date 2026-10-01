@@ -9,7 +9,7 @@ automatically on the next site build. Nothing else needs to change.
 
 ```
 assets/audio/
-├── alphabets/    one clip per letter (incl. legacy digraphs aw, ch, ng), e.g. a.mp3, aw.mp3
+├── alphabets/    one clip per letter , digraph and trigraph (incl. legacy aw, ch, ng), e.g. a.mp3, thl.mp3
 └── diacritics/   one clip per diacritic, demonstrated on an example word
 ```
 
