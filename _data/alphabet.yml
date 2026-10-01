@@ -54,6 +54,8 @@ letters:
     file: z.mp3
 
 digraphs:
+  - symbol: ch
+    file: ch.mp3
   - symbol: hl
     file: hl.mp3
   - symbol: hm
@@ -74,6 +76,8 @@ digraphs:
     file: ou.mp3
 
 trigraphs:
+  - symbol: chh
+    file: chh.mp3
   - symbol: hng
     file: hng.mp3
   - symbol: thl
