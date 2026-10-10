@@ -43,3 +43,19 @@ Clips for the tone & length table live in `assets/audio/diacritics/` and are nam
 
 If a letter or mark you want to record isn't listed yet, add it to the
 relevant `_data/*.yml` file in the same PR.
+
+## Splitting one long recording
+
+Instead of recording each clip separately, you can read a whole list in one
+take (same order as the list in `_data/alphabet.yml`, with a 1-2 second pause
+between items) and let a script cut and name the clips:
+
+```
+python3 tools/split_alphabet.py recording.m4a                  # 2.0 base letters
+python3 tools/split_alphabet.py recording.m4a --list digraphs  # or trigraphs, legacy
+```
+
+It needs [ffmpeg](https://ffmpeg.org) and writes mono MP3s into
+`assets/audio/alphabets/`. If it finds a different number of sounds than the
+list expects it writes nothing and prints what it found; tune `--noise` and
+`--min-silence`, or add `--dry-run` to preview.
