@@ -78,7 +78,7 @@ digraphs:
 trigraphs:
   - symbol: chh
     file: chh.mp3
-  - symbol: hng
+  - symbol: hng/ngh
     file: hng.mp3
   - symbol: thl
     file: thl.mp3
