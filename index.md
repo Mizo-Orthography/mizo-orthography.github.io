@@ -43,7 +43,7 @@ Have a clearer or more everyday example word? Suggest it in [Discussions](https:
 
 ## The Alphabet {#new-alphabet}
 
-The proposed base alphabet has **{{ site.data.alphabet.letters | size }} letters, none of them digraphs.** Digraphs and trigraphs are still part of the system, but they are built from these base letters rather than counted as letters of their own.
+The proposed base alphabet has **{{ site.data.alphabet.letters | size }} letters, none of them digraphs.** Digraphs, trigraphs, diphthongs and triphthongs are still part of the system, but they are built from these base letters rather than counted as letters of their own.
 
 **Spelling changes from legacy:** a few letters change places. They are the only letters whose spelling shifts; everything else carries over.
 
@@ -67,6 +67,18 @@ Two base letters that together make one sound:
 Three base letters that together make one sound:
 
 {% include sound-grid.html items=site.data.alphabet.trigraphs %}
+
+## Diphthongs {#new-diphthongs}
+
+Two vowels that together make one sound:
+
+{% include sound-grid.html items=site.data.alphabet.diphthongs %}
+
+## Triphthongs {#new-triphthongs}
+
+Three vowels that together make one sound:
+
+{% include sound-grid.html items=site.data.alphabet.triphthongs %}
 
 ## Tone & Length: The New Marks {#new-marks}
 
@@ -184,11 +196,13 @@ Legacy spelling does not mark **tone** or **vowel length**, so one written form 
 | **Glottal stop** | `ħ` | Replaces implicit or context-dependent glottal stops. |
 
 **2.0 base alphabet (no digraphs):** `a` `b` `c` `d` `e` `f` `g` `h` `i` `j` `k` `l` `m` `n` `o` `p` `r` `s` `t` `ṭ` `u` `v` `z`
-**2.0 digraphs:** `ch` `hl` `hm` `hn` `hr` `ng` `ou` `th` `tl` `ṭh`
+**2.0 digraphs:** `ch` `hl` `hm` `hn` `hr` `ng` `th` `tl` `ṭh`
 **2.0 trigraphs:** `chh` `hng` `thl`
+**2.0 diphthongs:** `ou`
+**2.0 triphthongs:** *(none listed yet)*
 **Legacy alphabet (digraphs *aw*, *ch*, *ng*):** `a` `aw` `b` `ch` `d` `e` `f` `g` `ng` `h` `i` `j` `k` `l` `m` `n` `o` `p` `r` `s` `t` `ṭ` `u` `v` `z`
 
-All source data for the tables on this page (letters, digraphs, trigraphs, legacy letters, and diacritics) lives in [`_data/alphabet.yml`](https://github.com/Mizo-Orthography/mizo-orthography.github.io/blob/main/_data/alphabet.yml) and [`_data/diacritics.yml`](https://github.com/Mizo-Orthography/mizo-orthography.github.io/blob/main/_data/diacritics.yml) — propose a change there and it updates every table on the page.
+All source data for the tables on this page (letters, digraphs, trigraphs, diphthongs, triphthongs, legacy letters, and diacritics) lives in [`_data/alphabet.yml`](https://github.com/Mizo-Orthography/mizo-orthography.github.io/blob/main/_data/alphabet.yml) and [`_data/diacritics.yml`](https://github.com/Mizo-Orthography/mizo-orthography.github.io/blob/main/_data/diacritics.yml) — propose a change there and it updates every table on the page.
 
 </details>
 

@@ -1,5 +1,6 @@
 # `letters`: the base alphabet of Mizo Orthography 2.0 (no digraphs).
-# `digraphs` / `trigraphs`: multi-letter sounds written with base letters in 2.0.
+# `digraphs` / `trigraphs`: multi-letter consonant sounds written with base letters in 2.0.
+# `diphthongs` / `triphthongs`: two- and three-vowel sounds in 2.0.
 # `legacy`: the traditional (legacy) Mizo alphabet, which counts aw, ch and ng
 # as digraph letters.
 # `file` is the expected filename (mp3) under assets/audio/alphabets/.
@@ -72,8 +73,6 @@ digraphs:
     file: tl.mp3
   - symbol: ṭh
     file: t_dot_h.mp3
-  - symbol: ou
-    file: ou.mp3
 
 trigraphs:
   - symbol: chh
@@ -82,6 +81,12 @@ trigraphs:
     file: hng.mp3
   - symbol: thl
     file: thl.mp3
+
+diphthongs:
+  - symbol: ou
+    file: ou.mp3
+
+triphthongs: []
 
 legacy:
   - symbol: a
@@ -133,7 +138,7 @@ legacy:
     file: n.mp3
     digraph: false
   - symbol: o
-    file: o.mp3
+    file: ou.mp3
     digraph: false
   - symbol: p
     file: p.mp3
